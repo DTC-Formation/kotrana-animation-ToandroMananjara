@@ -17,6 +17,10 @@ body{
     background:conic-gradient( #0197F6,#fff,#fff,#fff,#fff,#fff);
     border-radius: 50%;
     margin: 0;
+    animation-name: loader;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards; 
 }
 .container-1 .items-1{
     width: 60px;
