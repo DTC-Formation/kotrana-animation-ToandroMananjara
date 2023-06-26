@@ -25,3 +25,29 @@ body{
     border: none;
     border-radius: 50%;
 }
+
+@keyframes loader{
+    0%{
+        transform: rotate(0);
+    }
+    20%{
+        transform: rotate(360deg);
+        background:conic-gradient( #0197F6,#fff,#fff,#fff,#fff);
+    }
+    40%{
+        transform: rotate(360deg);
+        background:conic-gradient( #0197F6,#fff,#fff,#fff);
+    }
+    60%{
+        transform: rotate(360deg);
+        background:conic-gradient( #0197F6,#fff,#fff);
+    }
+    80%{
+         transform: rotate(360deg);
+        background:conic-gradient( #0197F6, #fff);
+    }
+    100%{
+        transform: rotate(360deg);
+        background: conic-gradient(#0197F6,#0197F6);
+    }
+}
