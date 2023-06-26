@@ -57,15 +57,38 @@ body{
 /* fin loader-1 */
 
 /* debut loader-2 */
-
+.container-2{
+    width: 50%;
+}
 .container-2 .item-2-1 i{
         font-size: 40px;
         background:#fff;
-        color: blue;  
+        color: blue; 
+        animation: deplacer 3s infinite backwards; 
 }
 .container-2 .item-2-2{
     width: 50px;
     height: 10px;
     background: rgb(24, 180, 201);
     border-radius: 20px;
+    animation: loader-2 3s infinite backwards;
 }
+
+@keyframes loader-2 {
+    from{
+            width: 50px;
+    }
+    to{
+            width: 100%;
+    }
+}
+@keyframes deplacer {
+    from{
+        margin-left: 0px;
+    }
+    to{
+        margin-left: 92%;
+    }
+    
+}
+/* fin de loader-2 */
