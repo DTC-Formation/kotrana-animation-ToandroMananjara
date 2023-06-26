@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+.container-1{
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:conic-gradient( #0197F6,#fff,#fff,#fff,#fff,#fff);
+    border-radius: 50%;
+    margin: 0;
+}
+.container-1 .items-1{
+    width: 60px;
+    height: 60px;
+    background: #02182B;
+    border: none;
+    border-radius: 50%;
+}
