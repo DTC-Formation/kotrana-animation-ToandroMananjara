@@ -6,7 +6,6 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
 }
 /* debut loader-1 */
 .container-1 {
@@ -16,6 +15,7 @@ body{
     align-items: center;
     justify-content: center;
     padding: 0;
+    margin: 20px;
     background:  #0197F6 ;
     border-radius: 50%; 
     animation: loader 1s infinite linear;
@@ -50,6 +50,7 @@ body{
 /* debut loader-2 */
 .container-2{
     width: 50%;
+    margin: 20px;
 }
 .container-2 .item-2-1 i{
         font-size: 40px;
@@ -81,4 +82,71 @@ body{
         margin-left: 92%;
     }
     
+}
+
+/* loader n°3 */
+.container-3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+
+}
+.container-3 .item-3-1,.item-3-2{
+    width:100px;
+    height:100px;
+}
+.item-3-1{
+    background: red;
+    animation: test 5s infinite ;
+    animation-fill-mode: backwards;
+}
+.item-3-2{
+    background: blue;
+    animation: ok 5s infinite ;
+    animation-fill-mode: backwards;
+}
+
+ @keyframes test {
+    
+    0%{
+        transform: translateY(100%);
+    }
+    25%{
+           transform:translateX(100%) translateY(100%);
+           background: grey;
+    }
+    50%{
+        transform: translateX(100%) translateY(0);
+        background:yellow;
+    }
+    75%{
+        transform: translateX(0px) translateY(0);
+        background: green;
+    }
+    100%{
+        transform: translateY(100%);   
+    
+     }
+} 
+@keyframes ok {
+    0%{
+            transform: translate(0);
+    
+    }
+    25%{
+        transform: translateX(-100%);
+    }
+    50%{
+           transform:translateX(-100%) translateY(100%);
+    }
+    75%{
+        transform: translateX(0) translateY(100%)
+        
+    }
+    100%{
+        transform: translateX(0) translateY(0); 
+    }
 }
