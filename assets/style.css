@@ -20,7 +20,7 @@ body{
 h1{
     width: 90%;
     font-family: astonpoliz;
-    color: #247BA0;
+    color: #FFA630;
     font-size: 40px;
     background: #50514F;
     text-align: center;
@@ -37,7 +37,6 @@ footer{
     align-items: center;
     margin-top: 20px;
     background:#50514F;
-    opacity: 0.5;
     position: relative;
     bottom: -50px;
     
@@ -52,12 +51,12 @@ footer .reseauSociaux ul{
 }
 footer .reseauSociaux ul i{
     font-size: 30px;
-    color: #fff;
+    color: #FCEFEF;
 }
 .text{
     text-align: center;
     font-size: 25px;
-    color: #fff;
+    color: #FFA630;
     margin-bottom: 10px;
 }
 .container{
@@ -78,7 +77,7 @@ footer .reseauSociaux ul i{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid 2px #fff ;
+    border: solid 2px #FCEFEF ;
     border-radius: 20px;
     padding: 20px 0;
     margin:20px 0;
@@ -96,7 +95,7 @@ footer .reseauSociaux ul i{
     justify-content: center;
     padding: 0;
     margin: 20px;
-    background:  #009DDC ;
+    background: #0496FF ;
     border-radius: 50%; 
     animation: loader 1s infinite linear;
 }   
@@ -140,14 +139,14 @@ footer .reseauSociaux ul i{
         font-size:40px;
         margin: 0;
         background:#50514F;
-        color: #F25F5C; 
+        color: #FF0000; 
         animation: deplacer 3s infinite backwards; 
 }
 .container-2 .item-2-2{
     width: fit-content;
     padding: 0;
     height: 10px;
-    background: #247BA0;
+    background: #0496FF;
     border-radius: 20px;
     animation: loader-2 3s infinite backwards;
 }
@@ -185,11 +184,11 @@ footer .reseauSociaux ul i{
     height:50px;
 }
 .item-3-1{
-    background: #F25F5C;
+    background: #FF0000;
     animation: translate-1 5s infinite backwards;
 }
 .item-3-2{
-    background: #247BA0;
+    background: #0496FF;
     animation: translate-2 5s infinite backwards;
 }
 
@@ -241,9 +240,9 @@ footer .reseauSociaux ul i{
     width: 260px;
     height: 51px;
     position: relative;
-    border-bottom: solid 1px #fff;
+    border-bottom: solid 1px #FCEFEF;
     border-radius: 50px;
-    box-shadow: inset 5px 10px 10px #247BA0;
+    box-shadow: inset 5px 10px 10px #0496FF;
     margin: 20px;
 }
 .item-4-1{
@@ -252,7 +251,7 @@ footer .reseauSociaux ul i{
     position: absolute; 
     display: flex;
     flex-direction: row;
-    background: linear-gradient(90deg,#F25F5C 50%,white 50%);
+    background: linear-gradient(90deg,#FF0000 50%,#FCEFEF 50%);
     border-radius: 50%;
     border: solid 1px black;
     box-shadow: 0px 0px 5px;
@@ -309,10 +308,10 @@ footer .reseauSociaux ul i{
     margin: 5px;
 }
 .item-5-1,.item-5-4{
-    background: #F25F5C;
+    background: #FF0000;
 }
 .item-5-2,.item-5-3{
-    background: #247BA0;
+    background: #0496FF;
 }
 
 @keyframes loader-5 {
@@ -362,11 +361,11 @@ animation-delay: 0.6s;
 
 @keyframes star {
     from{
-        color:#FFE066;
+        color:#FF0000;
         transform: rotate(0);
     }
     to{
-        color: #fff;
+        color: #FCEFEF;
         transform: rotate(360deg);
     }
 }
