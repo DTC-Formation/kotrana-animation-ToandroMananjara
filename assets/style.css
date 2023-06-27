@@ -147,7 +147,7 @@ footer .reseauSociaux ul i{
     width: fit-content;
     padding: 0;
     height: 10px;
-    background: #009DDC;
+    background: #247BA0;
     border-radius: 20px;
     animation: loader-2 3s infinite backwards;
 }
@@ -157,7 +157,7 @@ footer .reseauSociaux ul i{
             width: 0%;
     }
     to{
-            width: 100%;
+            width: 95%;
     }
 }
 @keyframes deplacer {
@@ -328,12 +328,13 @@ footer .reseauSociaux ul i{
     display: flex;
      flex-direction: row;
     flex-wrap: nowrap;
+    align-items: center;
     justify-content: space-evenly;
 }
  
 
 .container-6 i{
-    position: relative;
+    
     font-size: 40px;
     animation: star 1s infinite backwards;
 }
@@ -353,11 +354,11 @@ animation-delay: 0.6s;
 @keyframes star {
     from{
         color:#FFE066;
-        top:0;
+        transform: rotate(0);
     }
     to{
         color: #fff;
-        top: 20px;
+        transform: rotate(360deg);
     }
 }
  /* fin loader 6 */
@@ -368,7 +369,7 @@ animation-delay: 0.6s;
         font-size: 30px;
     }
     .container-2{
-        margin: 10px;
+        margin: 5px;
     }
     .container-4{
         margin: 0;
