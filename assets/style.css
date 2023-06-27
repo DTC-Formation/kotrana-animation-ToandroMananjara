@@ -185,11 +185,11 @@ footer .reseauSociaux ul i{
     height:50px;
 }
 .item-3-1{
-    background: red;
+    background: #F25F5C;
     animation: translate-1 5s infinite backwards;
 }
 .item-3-2{
-    background: #009DDC;
+    background: #247BA0;
     animation: translate-2 5s infinite backwards;
 }
 
@@ -279,7 +279,7 @@ footer .reseauSociaux ul i{
     height: 100px;
     display: flex;
     border-radius: 50%;
-    animation: loader-5 2s infinite linear; 
+    animation: loader-5 0.5s  infinite ;  
 
 }
 .top{
@@ -295,7 +295,14 @@ footer .reseauSociaux ul i{
     justify-content: center;
     
 }
-.item-5-1,.item-5-2,.item-5-3,.item-5-4{
+.item-5-1,.item-5-4{
+    width: 40px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.item-5-2,.item-5-3{
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -310,11 +317,13 @@ footer .reseauSociaux ul i{
 
 @keyframes loader-5 {
     from{
-        transform: rotate(0) scale(0.5);
+        transform: rotate(0);
+         /* scale(0.5); */
         
     }
     to{
-        transform: rotate(360deg) scale(1.5);
+        transform: rotate(360deg);
+         /* scale(1.5); */
     }
 }
 
