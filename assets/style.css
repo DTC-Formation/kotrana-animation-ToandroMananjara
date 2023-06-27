@@ -78,26 +78,26 @@ h1{
 /* fin loader 1 */
 /* debut loader-2 */
 .container-2{
-    width: 500px;
+    width: 100%;
     margin: 50px;
 }
 .container-2 .item-2-1 i{
-        font-size: 40px;
-        background:#fff;
-        color: blue; 
+        font-size:40px;
+        background:#50514F;
+        color: #F25F5C; 
         animation: deplacer 3s infinite backwards; 
 }
 .container-2 .item-2-2{
-    width: 50px;
+    width: 10%;
     height: 10px;
-    background: rgb(24, 180, 201);
+    background: #009DDC;
     border-radius: 20px;
     animation: loader-2 3s infinite backwards;
 }
 
 @keyframes loader-2 {
     from{
-            width: 50px;
+            width: 0%;
     }
     to{
             width: 100%;
@@ -108,7 +108,7 @@ h1{
         margin-left: 0px;
     }
     to{
-        margin-left: 92%;
+        margin-left: 90%;
     }
     
 }
