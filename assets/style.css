@@ -49,9 +49,13 @@ footer .reseauSociaux ul{
     justify-content: space-around;
     padding: 0;
 }
+
 footer .reseauSociaux ul i{
     font-size: 30px;
     color: #FCEFEF;
+}
+footer .reseauSociaux ul i:hover{
+    color: #FFA630;
 }
 .text{
     text-align: center;
@@ -87,52 +91,71 @@ footer .reseauSociaux ul i{
 
 
 /* debut loader-1 */
-.container-1 {
-    width: 70px;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    margin: 20px;
-    background: #0496FF ;
-    border-radius: 50%; 
-    animation: loader 1s infinite linear;
-}   
-    .container-item-1 {
-        width: 72px;
-        height: 72px;
-        position: absolute; 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: linear-gradient(360deg,#50514F 50%,transparent 50%),linear-gradient(transparent 50%,#50514F 50%);
-        border-radius: 50%;    
+.container-item-1 {
+    position: absolute;
+    width: 82px;
+    height: 82px; 
+    background: linear-gradient(360deg,#0496FF 50%,transparent 50%),linear-gradient(transparent 50%,#0496FF 50%);
+    border-radius: 50%;
+    animation: loader 1s infinite linear;    
 }
 .items-1{
-    height: 60px;
-    width: 60px;
-    background:#50514F;
-    border-radius: 50%;
-    animation: loader-1 2s infinite backwards;
+height: 70px;
+width: 70px;
+position: absolute;
+display: flex;
+align-items: center;
+justify-content: center;
+background:#50514F;
+color: #FCEFEF;
+border-radius: 50%;
+animation: loader-1 2s infinite backwards;
 }
-@keyframes loader {
-    from{
-        transform: rotate(0);
-    }
-    to{
-        transform: rotate(360deg);
-    }
+.loading-l{
+animation: loading 2s infinite backwards;
+animation-delay: 1.2s;
+position: relative;
+}
+.loading-o{
+animation: loading 2s infinite backwards;
+animation-delay: 1.3s;
+position: relative;
+}
+.loading-a{
+animation: loading 2s infinite backwards;
+animation-delay: 1.4s;
+position: relative;
+}
+
+@keyframes loading {
+from{
+    position: relative; 
+}
+to{
+     position: relative;
+     z-index: -1; 
     
 }
+
+}
+@keyframes loader {
+from{
+    transform: rotate(0);
+}
+to{
+    transform: rotate(360deg);
+}
+
+}
+
 /* fin loader 1 */
 /* debut loader-2 */
 .container-2{
     width: 100%;
-    margin: 50px;
+    margin: 5px;
 }
 .container-2 .item-2-1{
-    width: 90%;
+    width: 100%;
     padding: 0;
 }
 .container-2 .item-2-1 i{
@@ -151,23 +174,24 @@ footer .reseauSociaux ul i{
     animation: loader-2 3s infinite backwards;
 }
 
-@keyframes loader-2 {
-    from{
-            width: 0%;
+
+    @keyframes loader-2 {
+        from{
+                width: 0%;
+        }
+        to{
+                width: 100%;
+        }
     }
-    to{
-            width: 95%;
+    @keyframes deplacer {
+        from{
+            margin-left: 0px;
+        }
+        to{
+            margin-left: 90%;
+        }
+        
     }
-}
-@keyframes deplacer {
-    from{
-        margin-left: 0px;
-    }
-    to{
-        margin-left: 90%;
-    }
-    
-}
 /* fin de loader 2 */
 
 /* loader n°3 */
